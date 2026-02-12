@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Bedsheet Card </title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: Arial, sans-serif;
+}
+
+body{
+    background:#f3f3f3;
+    padding:40px;
+}
+
+/* Card */
+
+.product-card{
+    width:100%;
+    background:#fff;
+    border-radius:6px;
+    padding:12px;
+    box-shadow:0 2px 8px rgba(0,0,0,0.08);
+}
+
+.product-card img{
+    width:100%;
+    height:180px;
+    object-fit:contain;
+}
+
+.product-title{
+    font-size:14px;
+    margin:10px 0 6px;
+}
+
+.price{
+    margin-bottom:8px;
+}
+
+.price .new{
+    color:#B12704;
+    font-weight:bold;
+    margin-right:6px;
+}
+
+.price .old{
+    text-decoration:line-through;
+    font-size:12px;
+    color:#555;
+}
+
+/* See more link */
+
+.see-more{
+    color:#007185;
+    font-size:13px;
+    cursor:pointer;
+    user-select:none;
+}
+
+.see-more:hover{
+    text-decoration:underline;
+}
+
+/* Hidden details */
+
+.more-details{
+    display:none;
+    margin-top:10px;
+    font-size:13px;
+    color:#333;
+    line-height:1.5;
+    border-top:1px solid #eee;
+    padding-top:8px;
+}
+
+/* button */
+
+.buy-btn{
+    margin-top:10px;
+    width:100%;
+    padding:8px;
+    border:none;
+    background:#ffd814;
+    border-radius:4px;
+    cursor:pointer;
+}
+
+.buy-btn:hover{
+    background:#f7ca00;
+}
+
+</style>
+</head>
+<body>
+
+<div class="product-card">
+
+    <!-- Bedsheet image -->
+    <img src="./image copy 7.png" alt="Bedsheet">
+
+    <!-- Title -->
+    <p class="product-title">
+        Premium Double Bedsheet with 2 Pillow Covers
+    </p>
+
+    <!-- Price -->
+    <div class="price">
+        <span class="new">₹899</span>
+        <span class="old">₹1,299</span>
+    </div>
+
+    <!-- See more -->
+    <div class="see-more" onclick="toggleDetails(this)">
+        See more
+    </div>
+
+    <!-- Hidden content (Amazon style expand) -->
+    <div class="more-details">
+        <ul>
+            <li>Material: 100% Cotton</li>
+            <li>Size: Double Bed</li>
+            <li>Thread Count: 180 TC</li>
+            <li>Includes: 1 Bedsheet + 2 Pillow Covers</li>
+            <li>Easy wash & color fast</li>
+        </ul>
+    </div>
+
+    <button class="buy-btn">Add to Cart</button>
+
+</div>
+
+
+<script>
+function toggleDetails(el){
+
+    const details = el.nextElementSibling;
+
+    if(details.style.display === "block"){
+        details.style.display = "none";
+        el.innerText = "See more";
+    }else{
+        details.style.display = "block";
+        el.innerText = "See less";
+    }
+
+}
+</script>
+
+</body>
+</html>
