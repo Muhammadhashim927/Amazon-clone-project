@@ -16,7 +16,7 @@ body{
 
 }
 .logo{
-    background-image: url("./image.png");
+    background-image: url("./Zonixa\ brand\ logo\ with\ orange\ swoosh\ \(1\).png");
     height:50px;
     width: 100%;
     background-size: cover;
@@ -285,10 +285,12 @@ ul p{
 
 }
 .foot-logo{
-    background-image: url("./image\ copy\ 19.png");
+    background-image: url("./Zonixa\ logo\ on\ navy\ background.png");
     background-size: cover;
-    height: 60px;
+    height: 70px;
     width: 150px;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 .foot-panel-lan{
  border: 1px solid white;
@@ -325,10 +327,11 @@ ul p{
     border:none;
 }
 .foot-logo:hover{
-    border:2px solid rgb(255, 115, 0);
+    border:2px solid rgb(255, 255, 255);
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 65px;
 }
 .foot-panel4{
     margin-top: 10px;
